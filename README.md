@@ -13,7 +13,7 @@ primary key(codigo)
  
  |owner|constraint_name|table_name|column_name|position|
  |:----|:-------------:|---------:|----------:|-------:|
- |CURSO_PLSQL| CODIGO_PK| ARTICULOS| CODIGO|
+ |CURSO_PLSQL| CODIGO_PK| ARTICULOS| CODIGO|1|
  
  
 ```SQL
@@ -25,3 +25,12 @@ select * from all_objectS where object_name = 'CODIGO_PK';
  |CURSO_PLSQL| CODIGO_PK|null| 20393|20393| index| 14/05/2022| 14/05/2022| 14/05/2022 10:40|
 
 #### CON AMBAS OPCIONES NOS DIRA COMO QUEDO CONFIGURADA NUESTRA LLAVE PRIMARIA
+
+____
+
+> para eliminar el constraint o la restriccion
+
+```sql
+ALTER TABLE CLIENTES 
+DROP CONSTRAINT CODIGO_PK;
+```
